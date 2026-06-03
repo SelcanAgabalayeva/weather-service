@@ -15,8 +15,9 @@ public class CurrentWeather {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(name = "city_id")
-    private Integer cityId;
+    @ManyToOne
+    @JoinColumn(name = "city_id")
+    private City city;
     private BigDecimal temperature;
     @Column(name = "feels_like")
     private BigDecimal feelsLike;

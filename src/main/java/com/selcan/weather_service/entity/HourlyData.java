@@ -15,8 +15,9 @@ public class HourlyData {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(name = "city_id")
-    private Integer cityId;
+    @ManyToOne
+    @JoinColumn(name = "city_id")
+    private City city;
     @Column(name = "hour_label")
     private String hourLabel;
     @Column(name = "wind_speed")

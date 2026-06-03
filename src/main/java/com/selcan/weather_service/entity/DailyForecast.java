@@ -16,8 +16,9 @@ public class DailyForecast {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(name = "city_id")
-    private Integer cityId;
+    @ManyToOne
+    @JoinColumn(name = "city_id")
+    private City city;
     @Column(name = "forecast_date")
     private LocalDate forecastDate;
     @Column(name = "day_name")
