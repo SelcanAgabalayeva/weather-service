@@ -126,4 +126,4 @@ GitHub:
 https://github.com/SelcanAgabalayeva
 
 LinkedIn:
-(Add your LinkedIn URL)
+https://www.linkedin.com/in/selcan-a%C4%9Fabalayeva/
